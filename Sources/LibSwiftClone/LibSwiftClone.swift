@@ -15,6 +15,9 @@ public struct RcloneRequest {
 }
 
 public struct LibSwiftClone {
+
+    public init() {}
+
     public static func send(request: RcloneRequest) -> RcloneResult {
         LibRcloneCShim.RcloneInitialize()
 
